@@ -8,7 +8,7 @@ const {Navigator, Screen} = createNativeStackNavigator<StackProps>();
 
 export const Routes: React.FC = () => {
   return (
-    <Navigator>
+    <Navigator initialRouteName="Home" screenOptions={{headerShown: false}}>
       <Screen name="Home" component={Home} />
       <Screen name="Cart" component={Cart} />
     </Navigator>

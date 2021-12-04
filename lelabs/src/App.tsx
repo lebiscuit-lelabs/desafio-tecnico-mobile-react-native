@@ -1,18 +1,18 @@
 import React from 'react';
-import { SafeArea } from './components/SafeArea';
 import {NavigationContainer} from '@react-navigation/native';
 import { Routes } from './routes/index.routes';
 import { GlobalProvider } from './context';
+import { SafeArea } from './components/templates/SafeArea';
 
 export default function App() {
   return (
-    <GlobalProvider>
-      <SafeArea>
-        <NavigationContainer>
+    <SafeArea backgroundColor="#FFFFFF">
+      <NavigationContainer>
+        <GlobalProvider>
           <Routes />
-        </NavigationContainer>
-      </SafeArea>
-    </GlobalProvider>
+        </GlobalProvider>
+      </NavigationContainer>
+    </SafeArea>
   );
 }
 
