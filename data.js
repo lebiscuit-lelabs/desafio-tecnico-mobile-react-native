@@ -1,6 +1,6 @@
 // product list (utilizar para popular o aplicativo)
 
-const productList = [
+export const productList = [
     {
         id: 1,
         name: 'Conjunto de Assadeiras Quadradas',
