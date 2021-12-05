@@ -31,3 +31,11 @@ Serão avaliados os seguintes itens:
 * O uso de typescript será um diferencial;
  
 Em caso de dúvidas sobre o desafio, entre em contato.
+
+
+# Iniciar a aplicação
+Será necessário a instalação do módulo Expo para subir a aplicação.
+* npm install --global expo-cli
+Após a instalação e se estiver com o repositório já clonado, execute os seguintes comandos conforme o gerenciador instalado
+* yarn install ou npm install
+Com os devidos módulos instalados utilizar o comando expo start para disparar a aplicação, caso ja tenha algum emulador configurado usar o atalho A para abrir o emulador e assim o Expo dispara os eventos necessários para executar o emulador, instalar a aplicação e executar ela.
