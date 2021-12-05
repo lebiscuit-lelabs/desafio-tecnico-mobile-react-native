@@ -1,23 +1,23 @@
 import React, {useState} from 'react';
 import { Separator } from './styles';
-import {Card} from '../../components/molecules/Card';
+import {Card} from '../../components/molecules';
 import {useGlobalContext} from '../../hooks';
 import { FlatList } from 'react-native-gesture-handler';
 import BottomSheet from '../../components/templates/BottomSheet';
 import { ListRenderItemInfo } from 'react-native';
 import { Product } from '../../context/types';
-import {Details} from '../../components/molecules/Details';
-import { Header } from '../../components/molecules/Header';
+import {Details} from '../../components/molecules';
+import { Header } from '../../components/molecules';
 
 export const Home: React.FC = () => {
 
   const {products} = useGlobalContext();
 
-  const[details, setDetails] = useState<string>('');
+  const[product, setProduct] = useState<Product>({} as Product);
   const [visible, setVislble] = useState<boolean>(false);
 
   const handleOpenBottonsheet = (description): void => {
-    setDetails(description);
+    setProduct(description);
     setVislble(true);
   }
 
@@ -27,7 +27,7 @@ export const Home: React.FC = () => {
     <Header />
     <FlatList
       data={products}
-      renderItem={({item}: ListRenderItemInfo<Product>) => <Card item={item} onPress={() => handleOpenBottonsheet(item.description)} />}
+      renderItem={({item}: ListRenderItemInfo<Product>) => <Card item={item} onPress={() => handleOpenBottonsheet(item)} />}
       keyExtractor={item => item.id}
       showsHorizontalScrollIndicator={false}
       showsVerticalScrollIndicator={false}
@@ -40,7 +40,7 @@ export const Home: React.FC = () => {
       }}
     />
     <BottomSheet isVisible={visible} onClose={() => setVislble(false)}>
-      <Details description={details} />
+      <Details item={product} />
     </BottomSheet>
     </>
   )

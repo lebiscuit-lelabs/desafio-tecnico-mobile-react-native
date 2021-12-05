@@ -1,5 +1,5 @@
 import React from 'react';
-import { Button } from '../../atoms/Button';
+import { Button } from '../../atoms';
 import * as C from './styles';
 import {CartProps, Product} from '../../../context/types.d';
 import { TouchableOpacityProps } from 'react-native';
@@ -41,10 +41,6 @@ export const Card: React.FC<CardProps> = ({item, ...rest}) => {
     <C.Container {...rest}>
       <C.Image source={item.image} />
       <C.Name>{item.name}</C.Name>
-      <C.Price>{
-      new Intl.NumberFormat('pt-BR', {style: 'currency', currency: 'BRL'}).format(item.price)
-      }</C.Price>
-      <Button title="Adicionar ao carrinho" onPress={handleButtonPress} />
     </C.Container>
   );
 }
