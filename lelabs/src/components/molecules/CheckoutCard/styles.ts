@@ -13,4 +13,5 @@ export const Container = styled.View`
 export const Name = styled.Text`
   color: #989898;
   font-size: ${responsive(2)}px;
+  max-width: 70%;
 `;

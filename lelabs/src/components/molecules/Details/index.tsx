@@ -5,6 +5,7 @@ import * as D from './styles';
 import {useGlobalContext} from '../../../hooks';
 import { TouchableOpacityProps } from 'react-native';
 
+
 interface DetailsProps extends TouchableOpacityProps{
   item: Product;
 }

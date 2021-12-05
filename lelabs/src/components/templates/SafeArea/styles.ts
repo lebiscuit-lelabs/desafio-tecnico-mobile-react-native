@@ -9,7 +9,7 @@ interface ContainerProps {
 
 export const Container = styled.View<ContainerProps>`
   flex: 1;
-  padding-top: ${Platform.OS === 'ios' && getStatusBarHeight() + responsive(1)}px;
-  padding-bottom: ${Platform.OS === 'ios' && getBottomSpace()}px;
+  padding-top: ${Platform.OS === 'ios' ? getStatusBarHeight() + responsive(1) : 0}px;
+  padding-bottom: ${Platform.OS === 'ios' ? getBottomSpace() : 0}px;
   background-color: ${({backgroundColor}) => backgroundColor};
 `

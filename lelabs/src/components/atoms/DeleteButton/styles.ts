@@ -6,4 +6,6 @@ export const Container = styled.TouchableOpacity`
   width: ${responsive(6.5)}px;
   padding: ${responsive(0.7)}px;
   border-radius: 5px;
+  align-items: center;
+  justify-content: center;
 `;

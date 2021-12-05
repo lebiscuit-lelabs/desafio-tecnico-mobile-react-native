@@ -1,0 +1,15 @@
+com/lelabs/MainApplication.java
+ com.lelabs.MainApplication
+ com.lelabs.MainApplication$1
+com/lelabs/MainActivity.java
+ com.lelabs.MainActivity
+ com.lelabs.MainActivity$1
+com/lelabs/ReactNativeFlipper.java
+ com.lelabs.ReactNativeFlipper
+ com.lelabs.ReactNativeFlipper$1
+ com.lelabs.ReactNativeFlipper$2
+ com.lelabs.ReactNativeFlipper$2$1
+com/lelabs/BuildConfig.java
+ com.lelabs.BuildConfig
+com/facebook/react/PackageList.java
+ com.facebook.react.PackageList

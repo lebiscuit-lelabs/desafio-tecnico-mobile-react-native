@@ -31,3 +31,51 @@ Serão avaliados os seguintes itens:
 * O uso de typescript será um diferencial;
  
 Em caso de dúvidas sobre o desafio, entre em contato.
+
+## Descrição Tecnica
+
+Foi utilizado Expo para contrução do projeto, tempolate de bare, para maior controle do codigo nativo.
+
+Foi adicionado TypeScript.
+
+Para especificações de libs externas, olhar o arquivo ```package.json``` na pasta ```lelabs```.
+
+Navegação em Stack gerenciada por ```React Navigation```.
+
+Estilização totalmente responsiva utilizando ```Styled Components``` e ```React Native Responsive Fontsize```.
+
+Gerenciamento de estado contruido com ```Context API```.
+
+Codigo 100% tipado incluindo Navegação.
+
+## Executando Projeto
+
+```shell
+  yarn add --global expo-cli 
+```
+```shell
+  cd lelabs 
+```
+
+```bash
+  yarn
+```
+Ou
+
+```bash
+  npm install
+```
+
+Para iniciar o projeto no android:
+```bash
+  expo android
+```
+
+Para rodar o projeto no IOS
+```bash
+  expo ios
+```
+
+Não use o Expo Developer Tools para Android, pois foi feito uma alteração no gradle que ele não reconhece.
+
+
