@@ -1,0 +1,9 @@
+lelabs/node_modules/
+.expo
+__test__
+./lelabs/ios/Pods/
+.vscode/
+npm-debug.log
+yarn-error.log
+.DS_Store
+build/
